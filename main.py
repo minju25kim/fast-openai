@@ -21,7 +21,7 @@ class LinkRequest(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello, FastAPI!"}
+    return {"message": "Connection is successful!"}
 
 
 @app.post("/summarize")
