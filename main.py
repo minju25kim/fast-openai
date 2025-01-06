@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-from summarize import openai_summarize
-from gemini import genai_generate
+from ai.summarize import openai_summarize
+from ai.gemini import genai_generate
 
 app = FastAPI()
 
