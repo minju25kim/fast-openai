@@ -10,5 +10,5 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 async def genai_generate() -> str:
     genai.configure(api_key=GEMINI_API_KEY)
     model = genai.GenerativeModel("gemini-1.5-flash")
-    response = model.generate_content("Give me what is this year. only number")
+    response = model.generate_content("who are you?")
     return response.text
