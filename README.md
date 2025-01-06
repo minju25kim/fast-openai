@@ -1,8 +1,22 @@
-```sh
-# setup python virtual env
-python -m venv venv
-source venv/bin/activate
+## Commands
+
+```
+python -m venv myenv
+```
+
+```
+pip install -r requirements.txt
+```
+
+
+```
+source myenv/bin/activate
+```
+
+```
 deactivate
-# start localhost
+```
+
+```
 uvicorn main:app --reload
 ```

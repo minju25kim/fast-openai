@@ -5,13 +5,13 @@ from openai import OpenAI
 load_dotenv()
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-MODEL = os.getenv("MODEL")
+OPENAI_MODEL = os.getenv("OPENAI_MODEL")
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 
-async def ai_summarize(link) -> dict:
+async def openai_summarize(link) -> dict:
     response = client.chat.completions.create(
-        model=MODEL,
+        model=OPENAI_MODEL,
         messages=[
             {
                 "role": "system",
